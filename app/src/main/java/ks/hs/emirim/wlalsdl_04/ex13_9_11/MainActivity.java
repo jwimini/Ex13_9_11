@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run(){
                         for (int i = seek2.getProgress(); i < 100; i++) {
-                            seek1.setProgress(seek1.getProgress() +1);
+                            seek1.setProgress(seek2.getProgress() +1);
                             SystemClock.sleep(100);
                         }
                     }
